@@ -1,0 +1,99 @@
+/* <weight>: Use a value from 100 to 900 */
+/* font-family: "Roboto", sans-serif; */
+
+
+/* <weight>: Use a value from 200 to 700 */
+/* font-family: "Oswald", sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.editing_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/src/img/bg/WalkOfFame_BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.editing_nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding: 0px 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffffff1a;
+    backdrop-filter: blur(16px) saturate(120%);
+    box-shadow: #000000 0px 3px 50px;
+    z-index: 10;
+}
+
+.editing_name_logo {
+    font-family: "Oswald";
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
+
+.editing_nav_a {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
+
+.sec_stills, .sec_gifs,
+.sec_video {
+    font-style: italic;
+    padding: 20px;
+    font-family: 'Oswald';
+    color: white;
+    /* background-color: blue; */
+}
+
+.sec_stills {
+    margin-top: 7%;
+}
+
+.sec_stills_h2, .sec_gifs_h2,
+.sec_video_h2 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.sec_stills_img_1x1, .sec_stills_img_9x16,
+.sec_gifs_1x1, .sec_gifs_9x16,
+.sec_video_1x1, .sec_video_9x16 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    /* background-color: aquamarine; */
+}
+
+.sec_stills_img_1x1 img, .sec_stills_img_9x16 img,
+.sec_gifs_1x1 video, .sec_gifs_1x1 img,
+.sec_gifs_9x16 img, .sec_gifs_9x16 video,
+.sec_video_1x1 video, .sec_video_9x16 video {
+    border-radius: 20px;
+    color: #000000;
+    border: 2px solid white;
+    box-shadow: 0px 7px 12px;
+    transition: 0.5s;
+}
+
+.sec_stills_img_1x1 img:hover, .sec_stills_img_9x16 img:hover,
+.sec_gifs_1x1 video:hover, .sec_gifs_1x1 img:hover,
+.sec_gifs_9x16 video:hover, .sec_gifs_9x16 img:hover,
+.sec_video_1x1 video:hover, .sec_video_9x16 video:hover {
+    scale: 1.1;
+    border: 3px solid rgb(0, 255, 255);
+}

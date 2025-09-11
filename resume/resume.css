@@ -1,0 +1,173 @@
+/* <weight>: Use a value from 100 to 900 */
+/* font-family: "Roboto", sans-serif; */
+
+
+/* <weight>: Use a value from 200 to 700 */
+/* font-family: "Oswald", sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.resume_body {
+    background-image: url(/src/img/bg/StapleCenter_BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-position-x: -350px;
+}
+
+.resume_nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding: 0px 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffffff1a;
+    backdrop-filter: blur(16px) saturate(120%);
+    box-shadow: #000000 0px 3px 50px;
+    z-index: 10;
+}
+
+.resume_name_logo {
+    font-family: "Oswald";
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
+
+.resume_nav_a {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
+
+.resume_main_container {
+    color: white;
+    /* color: #080A32; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 7%;
+    width: 60%;
+    font-family: 'Roboto';
+    background: #ffffff1a;
+    backdrop-filter: blur(16px) saturate(120%);
+    box-shadow: #000000 0px 3px 50px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border: 2px solid white;
+}
+
+.first_section, .second_section, 
+.third_section, .forth_section,
+.fifth_section, .sixth_section {
+    margin-top: 2%;
+    width: 90%;
+    /* background-color: antiquewhite; */
+}
+
+.section1:nth-child(1) {
+    font-family: 'Oswald';
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.section1:nth-child(2) {
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.section1:nth-child(3) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.section2:nth-child(1), .section3:nth-child(1), 
+.section4:nth-child(1) {
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.section3 span, .section4 span,
+.section5 span, .section6 span {
+    font-family: 'Oswald';
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sec4_title1, .sec4_title2 {
+    font-size: 20px;
+}
+
+#sec_title2, #sec5_title2,
+#sec5_title3 {
+    margin-top: 20px;
+    /* background-color: aquamarine; */
+}
+
+#sec_title {
+    font-size: 30px;
+}
+
+.section5_experience, .section6_education {
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 800;
+    font-style: italic;
+}
+
+.section5_title1, .section5_title2,
+.section5_title3 {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Oswald';
+    font-style: italic;
+}
+
+.section5_date1, .section5_date2,
+.section5_date3 {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+hr {
+    margin-top: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.resume-btn {
+    color: #080A32;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080A32;
+    background-color: white;
+    height: 30px;
+    width: 230px;
+    border-radius: 20px;
+}

@@ -1,0 +1,94 @@
+/* <weight>: Use a value from 100 to 900 */
+/* font-family: "Roboto", sans-serif; */
+
+
+/* <weight>: Use a value from 200 to 700 */
+/* font-family: "Oswald", sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.about_body {
+    background-image: url(/src/img/bg/SantaMonica_BG.png);
+    background-size: 2150px;
+    background-repeat: no-repeat;
+}
+
+.about_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding: 0px 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffffff1a;
+    backdrop-filter: blur(16px) saturate(120%);
+    box-shadow: #000000 0px 3px 50px;
+}
+
+.about_name_logo {
+    font-family: "Oswald";
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
+
+.about_nav_a {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
+
+.about_main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10%;
+    height: 600px;
+    width: 100%;
+}
+
+.about_summary {
+    text-align: justify;
+    color: white;
+    /* color: #080A32; */
+    padding: 30px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 20px;
+    height: 90%;
+    width: 40%;
+    background-color: blueviolet;
+    background: #ffffff1a;
+    backdrop-filter: blur(30px) saturate(120%);
+    border: 2px solid white;
+    box-shadow: #000000 0px 3px 50px;
+}
+
+.about_pic {
+    background-image: url(/src/img/about/family_pic.JPEG);
+    background-position: center;
+    background-position-y: -20px;
+    background-size: 580px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 90%;
+    width: 30%;
+    box-shadow: #000000 0px 3px 50px;
+}

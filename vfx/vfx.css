@@ -1,0 +1,52 @@
+/* <weight>: Use a value from 100 to 900 */
+/* font-family: "Roboto", sans-serif; */
+
+
+/* <weight>: Use a value from 200 to 700 */
+/* font-family: "Oswald", sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.vfx_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/img/GriffithObservatory_BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vfx_nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding: 0px 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffffff1a;
+    backdrop-filter: blur(16px) saturate(120%);
+    box-shadow: #000000 0px 3px 50px;
+    z-index: 10;
+}
+
+.vfx_name_logo {
+    font-family: "Oswald";
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
+
+.vfx_nav_a {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    text-shadow: #000000 0px 10px 7px;
+}
