@@ -20,6 +20,10 @@
     background-repeat: no-repeat;
 }
 
+main {
+    margin-bottom: 50px;
+}
+
 .editing_nav {
     position: fixed;
     height: 100px;
@@ -72,7 +76,8 @@
 
 .sec_stills_img_1x1, .sec_stills_img_9x16,
 .sec_gifs_1x1, .sec_gifs_9x16,
-.sec_video_1x1, .sec_video_9x16 {
+.sec_video_1x1, .sec_video_9x16,
+.sec_video_16x9 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
@@ -82,7 +87,8 @@
 .sec_stills_img_1x1 img, .sec_stills_img_9x16 img,
 .sec_gifs_1x1 video, .sec_gifs_1x1 img,
 .sec_gifs_9x16 img, .sec_gifs_9x16 video,
-.sec_video_1x1 video, .sec_video_9x16 video {
+.sec_video_1x1 video, .sec_video_9x16 video,
+.sec_video_16x9 video {
     border-radius: 20px;
     color: #000000;
     border: 2px solid white;
@@ -93,7 +99,8 @@
 .sec_stills_img_1x1 img:hover, .sec_stills_img_9x16 img:hover,
 .sec_gifs_1x1 video:hover, .sec_gifs_1x1 img:hover,
 .sec_gifs_9x16 video:hover, .sec_gifs_9x16 img:hover,
-.sec_video_1x1 video:hover, .sec_video_9x16 video:hover {
+.sec_video_1x1 video:hover, .sec_video_9x16 video:hover,
+.sec_video_16x9 video:hover {
     scale: 1.1;
     border: 3px solid rgb(0, 255, 255);
 }
