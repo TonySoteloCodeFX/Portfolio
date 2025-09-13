@@ -17,7 +17,12 @@
     justify-content: center;
     background-image: url(/src/img/bg/GriffithObservatory_BG.png);
     background-size: cover;
+    background-position-x: -600px;
     background-repeat: no-repeat;
+}
+
+main {
+    margin-bottom: 50px
 }
 
 .vfx_nav {
@@ -49,4 +54,44 @@
     text-decoration: none;
     color: white;
     text-shadow: #000000 0px 10px 7px;
+}
+
+.sec_compositing {
+    font-style: italic;
+    padding: 20px;
+    font-family: 'Oswald';
+    color: white;
+    /* background-color: blue; */
+}
+
+.sec_compositing {
+    margin-top: 7%;
+}
+
+.sec_compositing_h2 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.sec_compositing_video1, .sec_compositing_video2,
+.sec_compositing_video3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    /* background-color: aquamarine; */
+}
+
+.sec_compositing_video1 video, .sec_compositing_video2 video,
+.sec_compositing_video3 video {
+    border-radius: 20px;
+    color: #000000;
+    border: 2px solid white;
+    box-shadow: 0px 7px 12px;
+    transition: 0.5s;
+}
+
+.sec_compositing_video1 video:hover, .sec_compositing_video2 video:hover,
+.sec_compositing_video3 video:hover {
+    scale: 1.1;
+    border: 3px solid rgb(0, 255, 255);
 }
