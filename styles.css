@@ -47,6 +47,12 @@
     text-decoration: none;
     color: white;
     text-shadow: #000000 0px 10px 7px;
+    transition: 0.5s;
+}
+
+.index_nav_a:hover {
+    color: aqua;
+    scale: 1.1;
 }
 
 main {

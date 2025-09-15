@@ -53,6 +53,12 @@ main {
     text-decoration: none;
     color: white;
     text-shadow: #000000 0px 10px 7px;
+    transition: 0.5s;
+}
+
+.dev_nav_a:hover {
+    color: aqua;
+    scale: 1.1;
 }
 
 .dev_skills, .dev_projects {
@@ -69,7 +75,8 @@ main {
     text-decoration: underline;
 }
 
-.dev_first_container, .dev_second_container {
+.dev_first_container, .dev_second_container,
+.dev_projects_first_container {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -77,7 +84,7 @@ main {
     /* background-color: antiquewhite; */
 }
 
-.dev_card {
+.dev_card, .dev_project_card {
     border-radius: 20px;
     background: #ffffff1a;
     backdrop-filter: blur(16px) saturate(120%);
@@ -87,7 +94,7 @@ main {
     /* background-color: antiquewhite; */
 }
 
-.dev_card_title {
+.dev_card_title, .dev_project_title {
     font-size: 35px;
     font-weight: 800;
 }
@@ -100,4 +107,42 @@ main {
 
 .dev_card img:hover {
     filter: invert(55%) sepia(85%) saturate(1000%) hue-rotate(140deg) brightness(100%) contrast(105%)
+    drop-shadow(0px 2px 15px)
 }
+
+.dev_project_card1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(../src/img/developer/projects/Hangman.PNG);
+    background-size: 1000px;
+    background-position: -250px -80px;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.dev_project_card1:hover {
+    scale: 1.1;
+}
+
+.dev_icons {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.dev_project_card1:hover .dev_icons {
+    opacity: 1;
+    /* filter: invert(55%) sepia(85%) saturate(1000%) hue-rotate(140deg) brightness(100%) contrast(105%) */
+}
+
+.dev_icons:hover {
+    filter: invert(55%) sepia(85%) saturate(1000%) hue-rotate(140deg) brightness(100%) contrast(105%)
+}
+
+
+

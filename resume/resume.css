@@ -49,6 +49,12 @@
     text-decoration: none;
     color: white;
     text-shadow: #000000 0px 10px 7px;
+    transition: 0.5s;
+}
+
+.resume_nav_a:hover {
+    color: aqua;
+    scale: 1.1;
 }
 
 .resume_main_container {
@@ -170,4 +176,21 @@ a {
     height: 30px;
     width: 230px;
     border-radius: 20px;
+    transition: 0.5s;
+}
+
+.section1_links {
+    transition: 0.5s;
+}
+
+.section1_links:hover {
+    color: aqua;
+    scale: 1.1;
+}
+
+.resume-btn:hover {
+    color: white;
+    background-color: aqua;
+    scale: 1.1;
+    border: 3px solid rgb(0, 255, 255);
 }

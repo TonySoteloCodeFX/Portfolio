@@ -12,12 +12,12 @@
 }
 
 .vfx_body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-image: url(/src/img/bg/GriffithObservatory_BG.png);
     background-size: cover;
-    background-position-x: -600px;
+    /* background-position-x: -600px; */
     background-repeat: no-repeat;
 }
 
@@ -54,6 +54,12 @@ main {
     text-decoration: none;
     color: white;
     text-shadow: #000000 0px 10px 7px;
+    transition: 0.5s;
+}
+
+.vfx_nav_a:hover {
+    color: aqua;
+    scale: 1.1;
 }
 
 .sec_compositing {
@@ -73,16 +79,14 @@ main {
     text-decoration: underline;
 }
 
-.sec_compositing_video1, .sec_compositing_video2,
-.sec_compositing_video3 {
+.sec_compositing_video1, .sec_compositing_video2 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
     /* background-color: aquamarine; */
 }
 
-.sec_compositing_video1 video, .sec_compositing_video2 video,
-.sec_compositing_video3 video {
+.sec_compositing_video1 video, .sec_compositing_video2 video {
     border-radius: 20px;
     color: #000000;
     border: 2px solid white;
@@ -90,8 +94,7 @@ main {
     transition: 0.5s;
 }
 
-.sec_compositing_video1 video:hover, .sec_compositing_video2 video:hover,
-.sec_compositing_video3 video:hover {
+.sec_compositing_video1 video:hover, .sec_compositing_video2 video:hover {
     scale: 1.1;
     border: 3px solid rgb(0, 255, 255);
 }
