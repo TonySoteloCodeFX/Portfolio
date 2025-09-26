@@ -145,7 +145,7 @@ input {
         padding: 20px 20px;
         height: auto;
         gap: 10px;
-        /* flex-direction: column; */
+        z-index: 10;
     }
 
     .contact_name_logo {
@@ -162,6 +162,7 @@ input {
         justify-content: center;
         margin-top: 20px;
         padding-bottom: 30px;
+        z-index: 1;
     }
 
     /* Container adjustments */
