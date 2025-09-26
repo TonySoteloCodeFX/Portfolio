@@ -126,11 +126,11 @@ main {
         padding: 20px 20px;
         height: auto;
         gap: 10px;
-        /* flex-direction: column; */
+        z-index: 10;
     }
 
     .editing_name_logo {
-        font-size: 24px;
+        font-size: 12px;
         text-align: center;
     }
 
@@ -140,6 +140,8 @@ main {
 
     main {
         margin-top: 40px;
+        z-index: 1;
+        padding-bottom: 30px;
     }
 
     /* Section titles */
