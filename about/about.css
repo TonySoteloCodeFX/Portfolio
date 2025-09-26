@@ -114,16 +114,22 @@
         padding: 20px 20px;
         height: auto;
         gap: 10px;
-        /* flex-direction: column; */
+        z-index: 10;
     }
 
     .about_name_logo {
-        font-size: 28px;
+        font-size: 18px;
         text-align: center;
     }
 
     .about_nav_a {
         font-size: 18px;
+    }
+
+    main {
+        z-index: 1;
+        margin-top: 50px;
+        padding-bottom: 30px;
     }
 
     /* Main content layout */
@@ -144,6 +150,7 @@
         line-height: 30px;
         padding: 20px;
         text-align: center;
+        text-shadow: #000000 0px 2px 7px;
     }
 
     /* Picture */
