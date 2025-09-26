@@ -130,3 +130,86 @@ input {
     border-radius: 10px;
     border: 2px solid black;
 }
+
+/* Media Queries */
+
+/* Mobile & tablet adjustments for Contact page */
+@media (max-width: 1024px) {
+    .contact_body {
+        background-size: 3200px;
+        background-position: center -150px;
+    }
+
+    /* Navigation bar */
+    .contact_nav {
+        padding: 20px 20px;
+        height: auto;
+        gap: 10px;
+        /* flex-direction: column; */
+    }
+
+    .contact_name_logo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contact_nav_a {
+        font-size: 18px;
+    }
+
+    /* Container adjustments */
+    .contact_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30%;
+        width: 90%;
+        height: auto;
+        gap: 20px;
+    }
+
+    /* Contact info box */
+    .contact_info {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .info_title {
+        font-size: 36px;
+    }
+
+    .info_email, .info_linkedin, .info_phone {
+        font-size: 16px;
+        text-align: center;
+        text-shadow: black 0px 5px 10px;
+    }
+
+    /* Contact card */
+    .contact_card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contact_item {
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .contact_item:nth-child(1) {
+        font-size: 36px;
+    }
+
+    /* Input fields */
+    input {
+        width: 80%;
+        height: 40px;
+        margin: 10px 0;
+    }
+
+    #message {
+        width: 90%;
+    }
+}

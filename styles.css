@@ -178,3 +178,80 @@ main {
     font-size: 30px;
     font-weight: 800;
 }
+
+/* Mobile & tablet adjustments */
+@media (max-width: 1024px) {
+    .index_body {
+        background-size: 3150px;
+        background-position-x: center;
+        background-position-y: -280px;
+    }
+
+    /* Navigation bar */
+    .index_nav {
+        padding: 20px 20px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .index_name_logo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .index_nav_a {
+        font-size: 18px;
+    }
+
+    /* Intro section */
+    .index_intro {
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .index_intro_name {
+        font-size: 50px;
+    }
+
+    .index_intro_Im_a {
+        font-size: 30px;
+        text-shadow: #000000 0px 3px 5px;
+    }
+
+    .index_intro_title {
+        top: 20px;
+        scale: 1; 
+    }
+
+    .index_intro_animation_wrapper {
+        position: relative;
+        left: 0px;
+        bottom: 5px;
+        font-size: 40px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        overflow: hidden;
+        text-align: center;
+        scale: 0.8;
+    }
+
+    /* Cards layout */
+    .index_card_container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width: 90%;
+        height: auto;
+        bottom: 0;
+    }
+
+    .index_card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .index_card a {
+        font-size: 20px;
+    }
+}

@@ -98,3 +98,59 @@
     width: 30%;
     box-shadow: #000000 0px 3px 50px;
 }
+
+/* Media Queries */
+
+/* Mobile & tablet adjustments for About page */
+@media (max-width: 1024px) {
+    /* Background adjustments */
+    .about_body {
+        background-size: 3500px;
+        background-position: center -150px;
+    }
+
+    /* Navigation bar */
+    .about_nav {
+        padding: 20px 20px;
+        height: auto;
+        gap: 10px;
+        /* flex-direction: column; */
+    }
+
+    .about_name_logo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .about_nav_a {
+        font-size: 18px;
+    }
+
+    /* Main content layout */
+    .about_main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30%;
+        height: auto;
+        gap: 20px;
+    }
+
+    /* Summary text */
+    .about_summary {
+        width: 90%;
+        height: auto;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Picture */
+    .about_pic {
+        height: 350px;
+        width: 350px;
+        background-size: cover;
+    }
+    
+}

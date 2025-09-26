@@ -98,3 +98,61 @@ main {
     scale: 1.1;
     border: 3px solid rgb(0, 255, 255);
 }
+
+/* Media Queries  */
+
+/* Mobile & tablet adjustments for VFX page */
+@media (max-width: 1024px) {
+    /* Background adjustments */
+    .vfx_body {
+        background-size: 3200px;
+        background-position-x: center;
+    }
+
+    /* Navigation bar */
+    .vfx_nav {
+        padding: 20px 20px;
+        height: auto;
+        gap: 10px;
+        /* flex-direction: column; */
+    }
+
+    .vfx_name_logo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .vfx_nav_a {
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+
+    /* Section spacing and text */
+    .sec_compositing {
+        padding: 10px;
+        margin-top: 15%;
+        text-align: center;
+    }
+
+    .sec_compositing_h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    /* Video containers: stack vertically */
+    .sec_compositing_video1, .sec_compositing_video2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    /* Videos */
+    .sec_compositing_video1 video, .sec_compositing_video2 video {
+        width: 90%;
+        height: auto;
+    }
+}
