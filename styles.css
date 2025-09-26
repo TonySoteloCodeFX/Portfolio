@@ -210,6 +210,7 @@ main {
     main {
         margin-top: 70px;
         z-index: 0;
+        padding-bottom: 20px;
     }
 
     /* Intro section */
@@ -219,7 +220,7 @@ main {
     }
 
     .index_intro_name {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .index_intro_Im_a {
