@@ -149,12 +149,19 @@ input {
     }
 
     .contact_name_logo {
-        font-size: 28px;
+        font-size: 18px;
         text-align: center;
     }
 
     .contact_nav_a {
         font-size: 18px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding-bottom: 30px;
     }
 
     /* Container adjustments */
