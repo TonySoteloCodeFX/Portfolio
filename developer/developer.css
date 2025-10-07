@@ -126,7 +126,23 @@ main {
     transition: 0.5s;
 }
 
-.dev_project_card1:hover {
+.dev_project_card2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(../src/img/developer/projects/TheBarberShop.PNG);
+    background-size: 650px;
+    background-position: -20px -40px;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.dev_project_card1:hover, .dev_project_card2:hover {
     scale: 1.1;
     border-color: aqua;
 }
@@ -136,13 +152,19 @@ main {
     transition: 0.5s;
 }
 
-.dev_project_card1:hover .dev_icons {
+.dev_project_card1:hover .dev_icons, .dev_project_card2:hover .dev_icons {
     opacity: 1;
     /* filter: invert(55%) sepia(85%) saturate(1000%) hue-rotate(140deg) brightness(100%) contrast(105%) */
 }
 
 .dev_icons:hover {
     filter: invert(55%) sepia(85%) saturate(1000%) hue-rotate(140deg) brightness(100%) contrast(105%)
+}
+
+.dev_projects_main_container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
 }
 
 /* Media Queries  */
@@ -218,7 +240,7 @@ main {
     }
 
     /* Project card image adjustments */
-    .dev_project_card1 {
+    .dev_project_card1, .dev_project_card2 {
         width: 90%;
         height: auto;
         background-size: cover;
@@ -226,7 +248,7 @@ main {
         margin-bottom: 20px;
     }
 
-    .dev_project_card1:hover {
+    .dev_project_card1:hover, .dev_project_card2:hover {
         scale: 1.05;
     }
 
