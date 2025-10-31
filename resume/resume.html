@@ -3,170 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/resume/resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- Font #1 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!-- Font #2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"               rel="stylesheet"> <!-- Google Font stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!-- Bootstrap -->
+    <link rel="stylesheet" href="/styles.css">  <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./resume.css">  <!-- Index Stylesheet -->
     <title>Resume</title>
 </head>
 <body class="resume_body">
+    <div class="dark-bg">
 
-    <header>
-        <nav class="resume_nav">
-            <span class="resume_name_logo">Tony Sotelo</span>
-            <a href="/index.html" class="resume_nav_a">Home</a>
-            <a href="/about/about.html" class="resume_nav_a">About</a>
-            <a href="/contact/contact.html" class="resume_nav_a">Contact</a>
-        </nav>
-    </header>
+        <header>
 
-    <main>
-        <section class="resume_main_container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item my-name-logo">
+                    <span>Tony Sotelo</span>
+                </li>
 
-            <section class="first_section">
-                <div class="section1">TONY SOTELO</div>
-                <div class="section1">Full Stack Software Developer</div>
-                <section class="section1">
-                    <div>Los Angeles, CA</div>
-                    <div>+1(661) 202-9461</div>
-                    <div>tonysotelo.vfx@gmail.com</div>
-                    <a class="section1_links" href="https://www.linkedin.com/in/tonysotelovfx/" target="_blank">LinkedIn</a>
-                    <a class="section1_links" href="https://github.com/TonySoteloCodeFX" target="_blank">GitHub</a>
-                    <a href="/resume/TonySotelo_Resume_FullStackDeveloper.pdf" download class="resume-btn">📄 Download My Resume</a>
-                </section>
-                <hr>
-            </section>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
 
-            <section class="second_section">
-                <div class="section2">PROFESSIONAL SUMMARY</div>
-                <div class="section2">
-                    Full Stack Software Developer with hands-on experience building RESTful APIs, integrating frontend and back-end systems, and managing relational databases. Proficient in implementing modern tech stacks including React, Flask, and MySQL to deliver scalable, user-focused web applications. Brings a strong foundation in creative problem-solving, cross-functional collaboration, and optimizing workflows for efficiency and performance. 
-                </div>
-                <hr>
-            </section>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about/about.html">About</a>
+                </li>
 
-            <section class="third_section">
-                <div class="section3">SKILLS</div>
-                <div class="section3"><span>Languages:</span> JavaScript, HTML5, CSS3, Python</div>
-                <div class="section3"><span>Frameworks/Libraries:</span> React, Flask</div>
-                <div class="section3"><span>Databases:</span> MySQL</div>
-                <div class="section3"><span>Tools/DevOps:</span> GitHub, Postman, RESTful APIs</div>
-                <div class="section3"><span>Other:</span> Motion Graphics, Video Editing</div>
-                <div class="section3"><span>Certifications:</span> Coding Temple - Full Stack Software Developer</div>
-                <hr>
-            </section>
+                <li class="nav-item">
+                    <a class="nav-link" href="./resume.html">Resume</a>
+                </li>
 
-            <section class="forth_section">
-                <div class="section4">PROJECTS</div>
-                <ul class="section4"><span class="sec4_title1">E-Commerce Management System</span> (React, Flask, MySQL, REST APIs)
-                    <li class="section4"><span>Developed</span> a full-stack web application enabling users to manage accounts, browse inventory, and process orders seamlessly</li>
-                    <li class="section4"><span>Implemented</span> CRUD operations via RESTful APIs with Flask, ensuring secure and efficient data flow between the front end and database.</li>
-                    <li class="section4"><span>Built</span> responsive React components with state management and routing, improving user experience and reducing navigation friction.</li>
-                    <li class="section4"><span>Integrated</span> MySQL for structured data storage and optimized queries for faster retrieval, reducing page load times by 20%.</li>
-                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact/contact.html">Contact</a>
+                </li>
+            </ul>
 
-                <ul class="section4" id="sec_title2"><span class="sec4_title2">Dynamic Form Builder</span> (React, Flask, MySQL)
-                    <li class="section4"><span>Created</span> an interactive form builder tool that allows administrators to design and deploy custom forms dynamically.</li>
-                    <li class="section4"><span>Engineered</span> API endpoints for form schema storage and retrieval, enhancing flexibility and adaptability across multiple use cases.</li>
-                    <li class="section4"><span>Utilized</span> React hooks for state management and responsive UI design, improving usability for nontechnical users.</li>
-                </ul>
-                <hr>
-            </section>
+        </header>
 
-            <section class="fifth_section">
-                <div class="section5_experience">EXPERIENCE</div>
+        <main>
+            <div class="resume-wrapper">
 
-                <section>
-                    <div class="section5_title1">Software Developer - Coding Temple | Remote</div>
-                    <div class="section5_date1">Oct 2024 - May 2025</div>
-                    <ul>
-                        <li class="section5"><span>Developed</span> RESTful APIs using Flask and MySQL to support full CRUD functionality, enabling seamless data exchange across application layers</li>
-                        <li class="section5"><span>Built</span> responsive React front-ends with dynamic forms, state management, and routing, improving overall user experience and interaction speed.</li>
-                        <li class="section5"><span>Collaborated</span> with cross-functional teams to test and debug features, reducing bug resolution time by 30% and improving release cycles.</li>
-                        <li class="section5"><span>Integrated</span> AI/ML concepts in personal projects using Pandas and NumPy, enhancing data preprocessing and analysis capabilities for more insightful outputs.</li>
-                        <li class="section5"><span>Took</span> initiative in group projects to coordinate task distribution, clarify blockers, and keep communication flowing, ensuring timely and cohesive team deliverables.</li>
-                    </ul>
+                <section class="my-info">   <!-- Main Info -->
+                    <div class="my-name">Tony Sotelo</div>
+                    <div class="my-title">Full Stack Software Developer</div>
+                    <div>
+                        <div class="section-content">Los Angeles, CA</div>
+                        <div class="section-content">+1(661) 202-9461</div>
+                        <div class="section-content">tonysotelo.vfx@gmail.com</div>
+                        <div class="section-content"><a href="https://www.linkedin.com/in/tonysotelovfx/" target="_blank">LinkedIn<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="icon bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg></a></div>
+                        <div class="section-content"><a href="https://github.com/TonySoteloCodeFX" target="_blank">GitHub<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="icon bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg></a></div>
+                        <div class="section-content"><a class="resume-btn" href="../resume/TonySotelo_Resume_FullStackDeveloper.pdf" download>Download My
+                                Resume<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="icon bi bi-cloud-download" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383" />
+                                    <path
+                                        d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z" />
+                                </svg></a></div>
+                    </div>
                 </section>
 
-                <section>
-                    <div class="section5_title2" id="sec5_title2">Motion Graphics / Video Editor - Paleovalley | Remote</div>
-                    <div class="section5_date2">Mar 2023 - Apr 2025</div>
-                    <ul>
-                        <li class="section5">
-                            <span>Produced</span>
-                             high-performance video ads optimized for social media algorithms, increasing viewer engagement metrics by 20%.
-                        </li>
-                        <li class="section5">
-                            <span>Partnered</span>
-                             with marketing teams to create data-driven creative strategies, contributing to a 15% boost in campaign conversion rates.
-                        </li>
-                        <li class="section5">
-                            <span>Integrated</span>
-                             advanced motion graphics and visual storytelling techniques, elevating brand recognition across digital channels.
-                        </li>
-                    </ul>
+                <div class="my-hr"></div>  <!-- <hr> -->
+
+                <section class="section-container">     <!-- Professional Summary -->
+                    <div class="section-title">PROFESSIONAL SUMMARY</div>
+                    <p class="section-content">
+                        Full Stack Software Developer who delivers end-to-end solutions that drive business and operational efficiency. Skilled in designing and implementing RESTful APIs, developing responsive React frontends, and optimizing MySQL databases for performance and scalability. Adept at transforming complex technical requirements into seamless user experiences and maintainable codebases. Passionate about clean architecture, agile collaboration, and leveraging modern frameworks to create reliable, production-ready applications that align with company goals and improve user satisfaction.
+                    </p>
                 </section>
 
-                <section>
-                    <div class="section5_title3" id="sec5_title3">Motion Graphics / Video Editor - Los Angeles Distribution & Broadcasting | Los Angeles, CA</div>
-                    <div class="section5_date3">Jun 2021 - Mar 2023</div>
-                    <ul>
-                        <li class="section5">
-                            <span>Designed</span>
-                             and animated motion graphics for commercials and social platforms, enhancing brand visibility and audience retention.
-                        </li>
-                        <li class="section5">
-                            <span>Tracked,</span>
-                             modeled, and composited CG elements to create photorealistic live-action sequences, improving visual production quality
-                        </li>
-                        <li class="section5">
-                            <span>Delivered</span>
-                             projects ahead of schedule by up to 10% by adapting agile workflows and streamlining post-production processes
-                        </li>
-                    </ul>
+                <div class="my-hr"></div>  <!-- <hr> -->
+
+                <section class="section-container">     <!-- Education -->
+                    <div class="section-title">EDUCATION</div>
+                    <div class="section-content"><span class="in-bold">Coding Temple</span> - Certificate, Full Stack Software Developer (Specialization in Backend Development)</div>
+                    <div class="section-content"><span class="in-bold">The Los Angeles Film School</span> - B.S. Animation (Concentration in Visual Effects)</div>
                 </section>
 
-                <section>
-                    <div class="section5_title3" id="sec5_title3">Master Control Operator - LATV Network| Culver City, CA</div>
-                    <div class="section5_date3">Mar 2014 - Jun 2021</div>
-                    <ul>
-                        <li class="section5">
-                            <span>Monitored</span>
-                             and verified on-air broadcast accuracy to ensure compliance with FCC regulations, demonstrating strong attention to detail and data validation practices.
-                        </li>
-                        <li class="section5">
-                            <span>Troubleshot</span>
-                             software and hardware systems in real time to resolve operational issues, reflecting technical agility and analytical problem-solving.
-                        </li>
-                        <li class="section5">
-                            <span>Performed</span>
-                             quality control (QC) and video asset editing in Adobe Premiere, maintaining performance standards comparable to testing and debugging workflows in software environments.
-                        </li>
-                        <li class="section5">
-                            <span>Coordinated</span> with engineering and production teams to ensure smooth content delivery, applying cross-department communication and process optimization similar to agile team collaboration.
-                        </li>
-                    </ul>
+                <div class="my-hr"></div>  <!-- <hr> -->
+
+                <section class="section-container">     <!-- Skills -->
+                    <div class="section-title">SKILLS</div>
+                    <div class="section-content"><span class="in-bold">Languages:</span> JavaScript, HTML5, CSS3, Python</div>
+                    <div class="section-content"><span class="in-bold">Frameworks/Libraries:</span> React, Flask</div>
+                    <div class="section-content"><span class="in-bold">Databases:</span> MySQL</div>
+                    <div class="section-content"><span class="in-bold">Tools/DevOps:</span> GitHub, Postman, RESTful APIs</div>
+                    <div class="section-content"><span class="in-bold">Other:</span> Motion Graphics, Video Editing</div>
+                    <div class="section-content"><span class="in-bold">Certifications:</span> Coding Temple - Full Stack Software Developer</div>
                 </section>
 
-                <hr>
+                <div class="my-hr"></div>  <!-- <hr> -->
 
-            </section>
+                <section class="section-container">     <!-- Projects -->
+                    <div class="section-title">PROJECTS</div>
 
-            <section class="sixth_section">
-                <div class="section6_education">EDUCATION</div>
-                <div class="section6">
-                    <span>Coding Temple</span>
-                     - Certificate, Full Stack Software Developer (Specialization in Backend Development)
-                </div>
-                <div class="section6">
-                    <span>The Los Angeles Film School</span>
-                     - B.S. Animation (Concentration in Visual Effects)
-                </div>
+                    <section>       <!-- E-Commerce Management System -->
+                        <div><span class="in-bold">E-Commerce Management System</span> (React, Flask, MySQL, REST APIs)</div>
+                        <ul>
+                            <li>Engineered a full-stack web application enabling users to manage accounts, browse inventory, and process orders with secure backend integration.</li>
+                            <li>Developed Flask RESTful APIs supporting full CRUD operations, ensuring efficient data flow between the frontend and MySQL database.</li>
+                            <li>Built responsive React components with state management and routing, reducing navigation friction and improving user experience.</li>
+                            <li>Optimized database queries and API response times, cutting page load speeds by 20% and enhancing system scalability.</li>
+                            <li>Implemented modular architecture for maintainable, production-ready code across client and server layers.</li>
+                        </ul>
+                    </section>
 
-            </section>
+                    <section>       <!-- Dynamic Form Builder -->
+                        <div><span class="in-bold">Dynamic Form Builder</span> (React, Flask, MySQL)</div>
+                        <ul>
+                            <li>Designed and deployed an interactive form builder tool that allows administrators to create, customize, and deploy forms dynamically.</li>
+                            <li>Developed API endpoints for form schema storage, retrieval, and validation, enhancing flexibility across multiple use cases.</li>
+                            <li>Utilized React hooks for real-time state management and built a responsive UI to simplify workflows for nontechnical users.</li>
+                            <li>Applied component-based design principles and optimized re-render logic to improve front-end performance.</li>
+                            <li>Integrated Flask with MySQL to ensure data persistence, schema versioning, and reliable backend scalability.</li>
+                        </ul>
+                    </section>
 
-        </section>
-    </main>
-    
+                </section>
+
+                <div class="my-hr"></div>  <!-- <hr> -->
+
+                <section class="section-container">     <!-- Experience -->
+                    <div class="section-title">EXPERIENCE</div>
+
+                    <section>       <!-- Software Developer - Coding Temple -->
+                        <div class="in-bold">Software Developer - Coding Temple | Remote</div>
+                        <div class="dates">Oct 2024 - May 2025</div>
+                        <ul>
+                            <li>Developed RESTful APIs with Flask and MySQL, enabling full CRUD functionality and seamless data flow between frontend and backend systems.</li>
+                            <li>Built responsive React interfaces with dynamic forms, routing, and state management, improving user experience and reducing navigation time.</li>
+                            <li>Collaborated in an agile, cross-functional environment to debug, test, and optimize features, cutting bug resolution time by 30%.</li>
+                            <li>Integrated AI/ML techniques using Pandas and NumPy in personal projects to automate data analysis and enhance predictive insights.</li>
+                            <li>Led group projects by coordinating tasks, clarifying blockers, and ensuring smooth communication for on-time delivery.</li>
+                        </ul>
+                    </section>
+
+                    <section>       <!-- Motion Graphics / Video Editor - Paleovalley -->
+                        <div class="in-bold">Motion Graphics / Video Editor - Paleovalley | Remote</div>
+                        <div class="dates">Mar 2023 - Apr 2025</div>
+                        <ul>
+                            <li>Produced high-performance video ads optimized for social algorithms, demonstrating a data-driven approach to creative development similar to performance testing in web apps.</li>
+                            <li>Partnered with marketing teams to design user-focused visual experiences, mirroring principles of front-end UI/UX design.</li>
+                            <li>Streamlined post-production workflows using templates, scripting, and automation tools, comparable to optimizing code for scalability and maintainability.</li>
+                            <li>Collaborated with remote teams under tight deadlines, applying agile communication and version control practices to meet rapid turnaround goals.</li>
+                            <li>Applied iterative improvement processes through A/B testing and analytics, aligning with agile development and user feedback loops.</li>
+                        </ul>
+                    </section>
+
+                    <section>       <!-- Motion Graphics / Video Editor - Los Angeles Distribution & Broadcasting -->
+                        <div class="in-bold">Motion Graphics / Video Editor - Los Angeles Distribution & Broadcasting | Los Angeles, CA</div>
+                        <div class="dates">Jun 2021 - Mar 2023</div>
+                        <ul>
+                            <li>Designed and animated dynamic visual systems for commercials and digital platforms, reinforcing a strong sense of user experience and interface design.</li>
+                            <li>Managed multiple complex projects simultaneously, showcasing time management and multi-threaded workflow handling akin to managing concurrent processes in software projects.</li>
+                            <li>Tracked, modeled, and composited CG elements requiring logical sequencing and algorithmic problem-solving, reflecting the same mindset used in debugging and software architecture.</li>
+                            <li>Delivered projects up to 10% ahead of schedule by optimizing workflows—similar to refactoring code and improving process efficiency in development pipelines.</li>
+                            <li>Maintained brand consistency across multiple campaigns, paralleling codebase consistency and design system implementation in full-stack projects.</li>
+                        </ul>
+                    </section>
+
+                    <section>       <!-- Master Control Operator - LATV Network -->
+                        <div class="in-bold">Master Control Operator - LATV Network | Culver City, CA</div>
+                        <div class="dates">Mar 2014 - Jun 2021</div>
+                        <ul>
+                            <li>Monitored and verified on-air broadcast accuracy to ensure compliance with FCC regulations, demonstrating strong attention to detail and data validation practices.</li>
+                            <li>Troubleshot software and hardware systems in real time to resolve operational issues, reflecting technical agility and analytical problem-solving.</li>
+                            <li>Performed quality control (QC) and video asset editing in Adobe Premiere, maintaining performance standards comparable to testing and debugging workflows in software environments.</li>
+                            <li>Coordinated with engineering and production teams to ensure smooth content delivery, applying cross-department communication and process optimization similar to agile team collaboration.</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/tonysotelovfx/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-linkedin"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/ctrl.zstudio.la/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/TonySoteloCodeFX" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
 </body>
 </html>
